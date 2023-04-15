@@ -91,9 +91,8 @@ def move_down():
         new_column += [0] * (4 - len(new_column))
         for i in range(4):
             grid[i][j] = new_column[i]
-    add_random_tile()
+        add_random_tile()
     display_grid()
-
 
 
 # Fonction pour afficher la grille
@@ -107,11 +106,6 @@ def display_grid():
             else:
                 tile_label.configure(text=str(value), bg=TILE_COLORS[value],
                                      fg="white" if value <= 4 else "black")
-
-
-
-display_grid()
-
 #Création de la fenêtre principale
 window = tk.Tk()
 window.title("2048")
@@ -155,8 +149,6 @@ def handle_key(event):
         move_down()
 
 #Ajout d'un gestionnaire d'événements pour les touches de direction
-window.bind("<Key>", handle_key)
-# Bind arrow keys to handle_key() function
 window.bind("<Left>", handle_key)
 window.bind("<Right>", handle_key)
 window.bind("<Up>", handle_key)
