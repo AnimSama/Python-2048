@@ -1,0 +1,4 @@
+a,b = True, False
+x = not a and (a or b)
+y= not (a and b) or b
+print(x,y)

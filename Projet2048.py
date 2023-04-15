@@ -89,6 +89,7 @@ class Game(tk.Frame):
                     bg=Game.Couleur_CelluleVide,
                     width=150,
                     height=150
+                    
                 )
                 frame_cells.grid(row=i, column=j, padx=5, pady=5)
                 Cellule_Nombre = tk.Label(self.grid_main, bg=Game.Couleur_CelluleVide)
