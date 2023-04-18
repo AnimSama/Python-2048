@@ -374,7 +374,7 @@ def Affich_Game_Over(): #//créer un fond tout blanc pour afficher winner ou loo
         game_over_frame = tk.Frame(background, borderwidth=2)
         game_over_frame.place(relx=0.5, rely=0.5, anchor="center")
         tk.Label(game_over_frame,
-                 text="Gagné!",
+                 text="Win!",
                  bg=Fond_Gagnant,
                  fg=Police_Fin_Jeux_Couleur,
                  font=Police_Fin_Jeux).pack()
@@ -382,24 +382,24 @@ def Affich_Game_Over(): #//créer un fond tout blanc pour afficher winner ou loo
         game_over_frame = tk.Frame(background, borderwidth=2)
         game_over_frame.place(relx=0.5, rely=0.5, anchor="center")
         tk.Label(game_over_frame,
-                 text="Perdu!",
+                 text="Game Over!",
                  bg=Fond_Perdant,
                  fg=Police_Fin_Jeux_Couleur,
                  font=Police_Fin_Jeux).pack()
     else:
         pass
      
-      
+
     # Boutons fonctionnement   
     
-Start = tk.Button(text="Commencé", 
+Start = tk.Button(text="Play", 
                     height=1, width=8,
                     font=("Helvetica", "10"),
                     command=Start_Button
                   )
 Start.grid(row=0, column=0)
 
-Exit = tk.Button(text="Quitter", 
+Exit = tk.Button(text="End", 
                     height=1, width=8,
                     font=("Helvetica", "10"),
                     command=Exit_Button
@@ -407,14 +407,14 @@ Exit = tk.Button(text="Quitter",
 Exit.grid(row=1, column=0)
 
 
-Sauvegarde = tk.Button(text="Sauvegarde", 
+Sauvegarde = tk.Button(text="Save", 
                     height=1, width=8,
                     font=("Helvetica", "10"),
                     command=Sauvegarde_Button
                   )
 Sauvegarde.grid(row=0, column=1)
 
-Load = tk.Button(text="Charger", 
+Load = tk.Button(text="Load", 
                     height=1, width=8,
                     font=("Helvetica", "10"),
                     command=Load_Button
@@ -424,14 +424,14 @@ Load.grid(row=1, column=1)
 
     # Boutons déplacement  
     
-Haut = tk.Button(text="Haut", 
+Haut = tk.Button(text="Up", 
                     height=1, width=6,
                     font=("Helvetica", "10"),
                     command=Up_Button
                   )
 Haut.grid(row=0, column=16)
 
-Bas = tk.Button(text="Bas", 
+Bas = tk.Button(text="Down", 
                     height=1, width=6,
                     font=("Helvetica", "10"),
                     command=Down_Button
@@ -439,14 +439,14 @@ Bas = tk.Button(text="Bas",
 Bas.grid(row=2, column=16)
 
 
-Gauche = tk.Button(text="Gauche", 
+Gauche = tk.Button(text="Left", 
                     height=1, width=6,
                     font=("Helvetica", "10"),
                     command=Left_Button
                   )
 Gauche.grid(row=1, column=15)
 
-Droite = tk.Button(text="Droite", 
+Droite = tk.Button(text="Right", 
                     height=1, width=6,
                     font=("Helvetica", "10"),
                     command=Right_Button
